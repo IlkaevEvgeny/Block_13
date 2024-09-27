@@ -6,7 +6,7 @@ api = ""
 bot = Bot(token = api)
 dp = Dispatcher(bot, storage = MemoryStorage())
 
-@dp.message_handler(text=['/start'])
+@dp.message_handler(commands=['start'])
 async def all_message(message):
     print("Привет! Я бот помогающий твоему здоровью.")
 
